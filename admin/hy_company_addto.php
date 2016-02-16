@@ -1,0 +1,68 @@
+<?php
+session_start();
+header("Content-type:text/html;charset=UTF-8");
+//检测是否登录，若没登录则转向登录界面
+if(!isset($_SESSION['uid'])){
+    header("Location:login.html");
+    exit();
+}
+
+echo "<form action=\"hy_company_addtook.php\" method=\"POST\">";
+echo "<input type=\"text\" name=\"title\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"host\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"fname\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"uid\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"username\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"renzheng\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"is_agent\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"is_vip\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"posttime\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"list\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"listorder\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"picurl\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"gz\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"yz\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"yzer\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"yztime\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"hits\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"levels\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"levelstime\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"lastview\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"content\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"province_id\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"city_id\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"zone_id\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"street_id\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_cate\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_saletype\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_regmoney\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_createtime\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_regplace\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_address\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_postnum\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_pro_ser\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"my_buy\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"my_trade\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact_zhiwei\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact_sex\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact_tel\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact_mobile\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact_fax\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_contact_email\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qy_website\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"qq\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"msn\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"skype\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"ww\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"bd_pics\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"toptime\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"if_homepage\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"permit_pic\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"guo_tax_pic\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"di_tax_pic\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"organization_pic\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"idcard_pic\" value=\"\"><br>";
+echo "<input type=\"text\" name=\"gg_maps\" value=\"\"><br>";
+echo "<input type=\"submit\" name=\"提交\" value=\"提交\">";
+echo "</form>";
