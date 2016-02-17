@@ -4,7 +4,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);                                          
 $db_host='localhost';
 $db_database='cisma';
 $db_username='root';
-$db_password='123456ab';
+$db_password='';
 $connection=mysql_connect($db_host,$db_username,$db_password);                    //连接到数据库
 mysql_query("set names 'utf8'");                                                  //编码转化
 if(!$connection){
@@ -18,7 +18,7 @@ if(!$db_selecct) {
 // 数据库连接常量
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PWD', '123456ab');
+define('DB_PWD', '');
 define('DB_NAME', 'cisma');
 
 
